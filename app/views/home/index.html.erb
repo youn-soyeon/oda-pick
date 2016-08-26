@@ -1,2 +1,401 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!DOCTYPE html>
+
+<html lang="en-US">
+<body>
+<div class="page-wrapper">
+    <div id="page-content">
+        <div class="hero-section" data-height="500">
+            <form id="form-hero">
+                <div class="hero-inner">
+                    <div class="hero-wrapper" >
+                        <div class="caption">
+                            <div class="inner">
+                                <div class="container">
+                                    <h1 class="center">오늘의 <font color=#FC6472>선물</font>추천 건수</h1>
+                                    <!-- 선호 검색어 숨김
+                                    <div class="favorite-search">
+                                        <span>선호 검색어</span>
+                                        <a href="">Bourges</a>
+                                        <a href="">Orléans</a>
+                                        <a href="">Rouen</a>
+                                        <a href="">Toulouse</a>
+                                    </div>
+                                    -->
+                                    <!--end favorite-searches-->
+                                </div>
+                                <!--end container-->
+                                <div class="bg-transfer"><img src="assets/img/bg-hero.jpg" alt=""></div>
+                                <!--end bg-transfer-->
+                            </div>
+                            <!--end inner-->
+                        </div>
+                        <!--end caption-->
+                        <div class="options">
+                            <div class="container">
+                            </div>
+                            <!--end container-->
+                        </div>
+                        <!--end options-->
+                    </div>
+                    <!--end hero-wrapper-->
+                </div>
+                <!--end hero-inner-->
+            </form>
+            <!--end form-->
+        </div>
+        <!--end hero-section-->
+
+        <div class="block">
+            <div class="container">
+                  <div class="feature">
+                          <aside class="circle">
+                              <i class="fa fa-male" aria-hidden="true"></i>
+                          </aside>
+                          <figure>
+                              <h2>남자선물 TOP4</h2>
+                              <h4>최근 일주일간 가장 핫한 선물</h4><br>
+                          </figure>
+                   </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="1">
+                            <div class="item-wrapper">
+                                <div class="image">
+                                    <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="좋아요"><i class="fa fa-thumbs-up"></i></div>
+                                    <a href="/detail" class="wrapper">
+                                        <img src="assets/img/items/sample1.png" alt="">
+                                    </a>
+                                </div>
+                                <!--end image-->
+                                <div class="description">
+                                    <div class="meta">
+                                        <span><i class="fa fa-star"></i>8.9</span>
+                                        <span><i class="fa fa-file-text-o"></i>365</span>
+                                    </div>
+                                    <div class="info">
+                                        <figure class="label label-info">운동화</figure>
+                                        <a href="/detail"><h3>Air Jordan</h3></a>
+                                        <figure class="location">Nike</figure>
+                                    </div>
+                                </div>
+                                <!--end description-->
+                                <div class="map-item">
+                                    <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                    <div class="map-wrapper"></div>
+                                </div>
+                                <!--end map-item-->
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div>
+                    <!--col-md-3-->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="2">
+                            <div class="item-wrapper">
+                                <div class="image">
+                                    <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat vel quam aliquet hendrerit semper eget elit. Aenean tincidunt ultrices bibendum. Proin nisi erat, iaculis non pulvinar a, scelerisque ut est. "><i class="fa fa-question"></i></div>
+                                    <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                    <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
+                                    <a href="detail.html" class="wrapper">
+                                        <div class="gallery">
+                                            <img src="assets/img/items/02.jpg" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/01.jpg">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/03.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="owl-navigation"></div>
+                                    <!--end owl-navigation-->
+                                </div>
+                                <!--end image-->
+                                <div class="description">
+                                    <div class="meta">
+                                        <span><i class="fa fa-star"></i>9.3</span>
+                                        <span><i class="fa fa-file-text-o"></i>148</span>
+                                    </div>
+                                    <div class="info">
+                                        <figure class="label label-info">Apartment</figure>
+                                        <a href="detail.html"><h3>Mountain Paradise</h3></a>
+                                        <figure class="location">Austria</figure>
+                                    </div>
+                                </div>
+                                <!--end description-->
+                                <div class="map-item">
+                                    <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                    <div class="map-wrapper"></div>
+                                </div>
+                                <!--end map-item-->
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div>
+                    <!--col-md-3-->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="3">
+                            <div class="item-wrapper">
+                                <div class="image">
+                                    <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat vel quam aliquet hendrerit semper eget elit. Aenean tincidunt ultrices bibendum. Proin nisi erat, iaculis non pulvinar a, scelerisque ut est. "><i class="fa fa-question"></i></div>
+                                    <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                    <a href="detail.html" class="wrapper">
+                                        <div class="gallery">
+                                            <img src="assets/img/items/03.jpg" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/01.jpg">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/04.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="owl-navigation"></div>
+                                    <!--end owl-navigation-->
+                                </div>
+                                <!--end image-->
+                                <div class="description">
+                                    <div class="meta">
+                                        <span><i class="fa fa-star"></i>9.8</span>
+                                        <span><i class="fa fa-file-text-o"></i>70</span>
+                                    </div>
+                                    <div class="info">
+                                        <figure class="label label-info">Spa & Hotel</figure>
+                                        <a href="detail.html"><h3>Twin Oaks Resort</h3></a>
+                                        <figure class="location">Australia</figure>
+                                    </div>
+                                </div>
+                                <!--end description-->
+                                <div class="map-item">
+                                    <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                    <div class="map-wrapper"></div>
+                                </div>
+                                <!--end map-item-->
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div>
+                    <!--col-md-3-->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="4">
+                            <div class="item-wrapper">
+                                <div class="image">
+                                    <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat vel quam aliquet hendrerit semper eget elit. Aenean tincidunt ultrices bibendum. Proin nisi erat, iaculis non pulvinar a, scelerisque ut est. "><i class="fa fa-question"></i></div>
+                                    <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                    <a href="detail.html" class="wrapper">
+                                        <div class="gallery">
+                                            <img src="assets/img/items/04.jpg" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/01.jpg">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/05.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="owl-navigation"></div>
+                                    <!--end owl-navigation-->
+                                </div>
+                                <!--end image-->
+                                <div class="description">
+                                    <div class="meta">
+                                        <span><i class="fa fa-star"></i>9.1</span>
+                                        <span><i class="fa fa-file-text-o"></i>58</span>
+                                    </div>
+                                    <div class="info">
+                                        <figure class="label label-info">Villa</figure>
+                                        <a href="detail.html"><h3>Sunrise Sanctum </h3></a>
+                                        <figure class="location">Switzerland</figure>
+                                    </div>
+                                </div>
+                                <!--end description-->
+                                <div class="map-item">
+                                    <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                    <div class="map-wrapper"></div>
+                                </div>
+                                <!--end map-item-->
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div>
+                    <!--col-md-3-->
+                </div>
+                <!--end row-->
+                <a href="/gift_list" class="pull-right">더 많은 선물보기</a>
+            </div>
+            <!--end container-->
+        </div>
+        <!--end block-->
+
+        <div class="block">
+            <div class="container">
+                  <div class="feature">
+                          <aside class="circle">
+                              <i class="fa fa-female" aria-hidden="true"></i>
+                          </aside>
+                          <figure>
+                              <h2>여자선물 TOP4</h2>
+                              <h4>최근 일주일간 가장 핫한 선물</h4><br>
+                          </figure>
+                   </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="1">
+                            <div class="item-wrapper">
+                                <div class="image">
+                                    <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat vel quam aliquet hendrerit semper eget elit. Aenean tincidunt ultrices bibendum. Proin nisi erat, iaculis non pulvinar a, scelerisque ut est. "><i class="fa fa-question"></i></div>
+                                    <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                    <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
+                                    <a href="detail.html" class="wrapper">
+                                        <div class="gallery">
+                                            <img src="assets/img/items/01.jpg" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/02.jpg">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/03.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="owl-navigation"></div>
+                                    <!--end owl-navigation-->
+                                </div>
+                                <!--end image-->
+                                <div class="description">
+                                    <div class="meta">
+                                        <span><i class="fa fa-star"></i>8.9</span>
+                                        <span><i class="fa fa-file-text-o"></i>365</span>
+                                    </div>
+                                    <div class="info">
+                                        <figure class="label label-info">Hotel</figure>
+                                        <a href="detail.html"><h3>Spring Hotel</h3></a>
+                                        <figure class="location">Montenegro</figure>
+                                    </div>
+                                </div>
+                                <!--end description-->
+                                <div class="map-item">
+                                    <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                    <div class="map-wrapper"></div>
+                                </div>
+                                <!--end map-item-->
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div>
+                    <!--col-md-3-->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="2">
+                            <div class="item-wrapper">
+                                <div class="image">
+                                    <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat vel quam aliquet hendrerit semper eget elit. Aenean tincidunt ultrices bibendum. Proin nisi erat, iaculis non pulvinar a, scelerisque ut est. "><i class="fa fa-question"></i></div>
+                                    <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                    <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
+                                    <a href="detail.html" class="wrapper">
+                                        <div class="gallery">
+                                            <img src="assets/img/items/02.jpg" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/01.jpg">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/03.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="owl-navigation"></div>
+                                    <!--end owl-navigation-->
+                                </div>
+                                <!--end image-->
+                                <div class="description">
+                                    <div class="meta">
+                                        <span><i class="fa fa-star"></i>9.3</span>
+                                        <span><i class="fa fa-file-text-o"></i>148</span>
+                                    </div>
+                                    <div class="info">
+                                        <figure class="label label-info">Apartment</figure>
+                                        <a href="detail.html"><h3>Mountain Paradise</h3></a>
+                                        <figure class="location">Austria</figure>
+                                    </div>
+                                </div>
+                                <!--end description-->
+                                <div class="map-item">
+                                    <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                    <div class="map-wrapper"></div>
+                                </div>
+                                <!--end map-item-->
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div>
+                    <!--col-md-3-->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="3">
+                            <div class="item-wrapper">
+                                <div class="image">
+                                    <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat vel quam aliquet hendrerit semper eget elit. Aenean tincidunt ultrices bibendum. Proin nisi erat, iaculis non pulvinar a, scelerisque ut est. "><i class="fa fa-question"></i></div>
+                                    <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                    <a href="detail.html" class="wrapper">
+                                        <div class="gallery">
+                                            <img src="assets/img/items/03.jpg" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/01.jpg">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/04.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="owl-navigation"></div>
+                                    <!--end owl-navigation-->
+                                </div>
+                                <!--end image-->
+                                <div class="description">
+                                    <div class="meta">
+                                        <span><i class="fa fa-star"></i>9.8</span>
+                                        <span><i class="fa fa-file-text-o"></i>70</span>
+                                    </div>
+                                    <div class="info">
+                                        <figure class="label label-info">Spa & Hotel</figure>
+                                        <a href="detail.html"><h3>Twin Oaks Resort</h3></a>
+                                        <figure class="location">Australia</figure>
+                                    </div>
+                                </div>
+                                <!--end description-->
+                                <div class="map-item">
+                                    <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                    <div class="map-wrapper"></div>
+                                </div>
+                                <!--end map-item-->
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div>
+                    <!--col-md-3-->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="4">
+                            <div class="item-wrapper">
+                                <div class="image">
+                                    <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis erat vel quam aliquet hendrerit semper eget elit. Aenean tincidunt ultrices bibendum. Proin nisi erat, iaculis non pulvinar a, scelerisque ut est. "><i class="fa fa-question"></i></div>
+                                    <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                    <a href="detail.html" class="wrapper">
+                                        <div class="gallery">
+                                            <img src="assets/img/items/04.jpg" alt="">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/01.jpg">
+                                            <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/05.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="owl-navigation"></div>
+                                    <!--end owl-navigation-->
+                                </div>
+                                <!--end image-->
+                                <div class="description">
+                                    <div class="meta">
+                                        <span><i class="fa fa-star"></i>9.1</span>
+                                        <span><i class="fa fa-file-text-o"></i>58</span>
+                                    </div>
+                                    <div class="info">
+                                        <figure class="label label-info">Villa</figure>
+                                        <a href="detail.html"><h3>Sunrise Sanctum </h3></a>
+                                        <figure class="location">Switzerland</figure>
+                                    </div>
+                                </div>
+                                <!--end description-->
+                                <div class="map-item">
+                                    <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                    <div class="map-wrapper"></div>
+                                </div>
+                                <!--end map-item-->
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div>
+                    <!--col-md-3-->
+                </div>
+                <!--end row-->
+                <a href="/gift_list" class="pull-right">더 많은 선물보기</a>
+            </div>
+            <!--end container-->
+        </div>
+        <!--end block-->
+    </div>
+</div>
+<!--end page-wrapper-->
+<a href="#page-header" class="to-top scroll" data-show-after-scroll="600"><i class="arrow_up"></i></a>
+
+
+</body>
