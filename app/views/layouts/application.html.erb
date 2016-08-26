@@ -5,8 +5,17 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!-- 디바이스별로 동적인 레이아웃을 제대로 보이도록 하기 위해서 화면의 스케일을 보정하기 위한 것 -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
 <body>
+
+<!-- flash 메시지(주로 컨트롤로 액션의 처리 결과 정보를 전달하기 위해 사용하는 해시 데이터임)가 보이도록 하는 코드 -->
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 <%= yield %>
 
