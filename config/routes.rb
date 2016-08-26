@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :posts
   root 'home#index'
+
+
+
+  # posts controller <= 기존의 board 에서바꿈 -----------------
+   get 'destroy/:id'   => "posts#destroy"
+   get 'admin'         => "posts#admin"
+   get 'admin_user'    => "posts#admin_user"
+   get 'admin_content' => "posts#admin_content"
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
