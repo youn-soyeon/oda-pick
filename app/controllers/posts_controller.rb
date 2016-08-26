@@ -17,6 +17,7 @@ class PostsController < ApplicationController
   end
 
 
+
 # R-------------------------------------
   def show  # 기존의 detail
   @post = Post.find(params[:id])
@@ -54,6 +55,18 @@ class PostsController < ApplicationController
   end
 
 #끝
+
+# 댓글부분
+def reply_create
+  @replies = Reply.all.order("id desc")
+  reply = Reply.new
+  reply.re_content =    params[:content_of_re] #뒤에콘텐츠는 index 에서의 name값이다.
+  reply.post_id =       params[:post_of_re]
+  reply.present_point = params[:point]
+  reply.save
+  redirect_to :back
+end
+
 
 
 private #넘어온파라미터를 private함수로 사용한다.

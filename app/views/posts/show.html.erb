@@ -3,91 +3,25 @@
 <html lang="en-US">
 <body>
 <div class="page-wrapper">
-    <div style="margin:50px">
+
+    <div style="margin:70px">
     </div>
 
     <div id="page-content">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="sidebar">
-                        <div class="box filter">
-                            <form id="form-filter" class="labels-uppercase">
-                                <!--end form-group-inline-->
-
-                                <div class="wrapper">
-                              		<section>
-                              		    <h3>성별</h3>
-                              		    <ul class="checkboxes">
-                                            <li class="checkbox-inline no_indent"><label><input type="checkbox" name="gender_man">남자</label></li>
-                                            <li class="checkbox-inline no_indent"><label><input type="checkbox" name="gender_woman">여자</label></li>
-	                                    </ul>
-                                        <!--end checkboxes-->
-                                    </section>
-                                    <!--end gender-->
-                                	<section>
-                                	  <h3>가격대</h3>
-                                    <ul class="checkboxes">
-                                        <li class="checkbox-inline no_indent"><label><input type="checkbox" name="mon_0by5">~0.5</label></li>
-                                        <li class="checkbox-inline no_indent"><label><input type="checkbox" name="mon_5by10">0.5~1</label></li>
-                                        <li class="checkbox-inline no_indent"><label><input type="checkbox" name="mon_10by50">1~5</label></li>
-                                        <li class="checkbox-inline no_indent"><label><input type="checkbox" name="mon_50by100">5~10</label></li>
-                                        <li class="checkbox-inline no_indent"><label><input type="checkbox" name="mon_100">10~</label></li>
-                                    </ul>
-                										<div id="slider-range"></div>
-                                	</section>
-                                	<!-- end pricebar -->
-                                  <section>
-                                      <h3>연령대</h3>
-                                      <ul class="checkboxes">
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_0">유아 </label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_10">10대</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_20">20대</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_30">30대</label></li>
-                                      	  <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_40">40대</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_50">50대</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_60">60대이상</label></li>
-                                      </ul>
-                                      <!--end checkboxes-->
-                                  </section>
-                                  <!--end age-->
-                                  <section>
-                                      <h3>기념일</h3>
-                                      <ul class="checkboxes">
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_love">연인</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_friend">친구</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_family">가족</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_teacher">스승</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_birthday">생일</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_enemy">원수</label></li>
-                                      </ul>
-                                      <!--end checkboxes-->
-                                  </section>
-                                  <!--end anniversary-->
-                                </div>
-                                <!--end filter-->
-                                <div class="form-group center">
-                                    <button type="submit" class="btn btn-primary btn-rounded form-control">Search</button>
-                                </div>
-                            </form>
-                            <!--end form-filter-->
-                        </div>
-                        <!--end filter-->
-                    </div>
-                    <!--end sidebar-->
+                  <!--side share-->
                 </div>
                 <!--end col-md-3-->
                 <div class="col-md-9 col-sm-8">
                     <div class="main-content">
                         <div class="title">
                             <div class="left">
-                                <h1><%= @post.title %><span class="rating"><i class="fa fa-star"></i>9.9</span></h1><br/>
-                                <h2 align="right"><a href="/posts" class="btn btn-primary btn-rounded scroll">리스트로가기</a></h2>
-
+                                <h1><%= @post.title %><span class="rating"><i class="fa fa-star"></i>9.9</span></h1>
                             </div>
-
                             <div class="right">
-                                <a href="#availability" class="btn btn-primary btn-rounded scroll">가격비교 하러가기</a>
+                                <a href="http://shopping.naver.com/search/all.nhn?query=<%=@post.title %>&cat_id=&frm=NVSHATC" class="btn btn-primary btn-rounded scroll">네이버쇼핑 하러가기</a>
                             </div>
                         </div>
                         <!--end title-->
@@ -99,69 +33,42 @@
                             <h2>선물받는 사람</h2>
                             <dl class="info">
                                 <dt>성별:</dt>
-                                <dd><%= @post.gift_gender%></dd>
+                                <dd>남자</dd>
                                 <dt>연령대:</dt>
-                                <dd><%= @post.age_group%></dd>
+                                <dd>20대</dd>
                                 <dt>기념일종류:</dt>
-                                <dd><%= @post.anniversary%></dd>
+                                <dd>1주년</dd>
                                 <dt>구입가격:</dt>
-                                <dd><%= @post.money%></dd>
+                                <dd>267,000원</dd>
                                 <dt>점수</dt>
                                 <dd><i class="fa fa-star"></i>5</dd>
                             </dl>
                             <!--end info-->
                         </section>
+                        <!--end 선물받는사람프로필-->
                         <section>
-                            <h2>나는 이 선물을</h2>
-                            <p><%= @post.content%></p>
+                            <%= @post.content %>
                         </section>
+                        <!--end 내용-->
                         <hr>
                         <section id="reviews">
                           <div class="title">
-                              <span class="pull-left" style="font-size:20px;">평점<a class="review-rating"><i class="fa fa-star"></i>10</a>/ 총 <a class="review-count">2</a>건의 의견</span>
+                              <span class="pull-left" style="font-size:20px;">평점<a class="review-rating"><i class="fa fa-star"></i>1</a>/ 총 <a class="review-count"><%= @post.replies.count %></a>건의 의견</span>
                               <span class="pull-right"><a href="#write-a-review" class="btn btn-primary btn-rounded pull-right scroll">의견달기</a></span>
                           </div>
+                          <% @post.replies.each do |r| %>
                             <div class="reviews">
                                 <div class="review">
                                     <div class="row">
                                         <div class="col-md-2">
-                                            <aside class="name">John Doe</aside>
-                                            <aside class="date">10.03.2015</aside>
-                                            <aside class="rating"><i class="fa fa-star" style="margin-right: 5px"></i>10</aside>
+                                            <aside class="name">유저이름</aside>
+                                            <aside class="date">댓글작성일</aside>
+                                            <aside class="rating" name="point_of_re"><i class="fa fa-star" style="margin-right: 5px"></i>10</aside>
                                         </div>
                                         <!--end col-md-2-->
                                         <div class="col-md-10">
                                             <div class="comment">
-                                                <p>In eleifend odio vel augue mattis, et pharetra dolor ullamcorper. Nulla
-                                                    ut porttitor mauris. Sed tincidunt, urna non cursus suscipit, quam velit
-                                                    laoreet libero, sit amet tincidunt ex nunc eget eros.
-                                                </p>
-                                                <div class="clearfix options">
-                                                    <span class="pull-right">공감하기<a href="" class="btn btn-framed btn-default btn-rounded btn-small icon" style="margin-left: 10px;"><i class="fa fa-thumbs-up font-color-default"></i>10</a></span>
-                                                </div>
-                                                <!--end options-->
-                                            </div>
-                                            <!--end comment-->
-                                        </div>
-                                        <!--end col-md-10-->
-                                    </div>
-                                    <!--end row-->
-                                </div>
-                                <!--end review-->
-                                <div class="review">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <aside class="name">Peter Green</aside>
-                                            <aside class="date">10.03.2015</aside>
-                                            <aside class="rating"><i class="fa fa-star" style="margin-right: 5px"></i>6</aside>
-                                        </div>
-                                        <!--end col-md-2-->
-                                        <div class="col-md-10">
-                                            <div class="comment">
-                                                <p>In eleifend odio vel augue mattis, et pharetra dolor ullamcorper. Nulla
-                                                    ut porttitor mauris. Sed tincidunt, urna non cursus suscipit, quam velit
-                                                    laoreet libero, sit amet tincidunt ex nunc eget eros.
-                                                </p>
+                                                <p><%= r.re_content %></p>
                                                 <div class="clearfix options">
                                                     <span class="pull-right">공감하기<a href="" class="btn btn-framed btn-default btn-rounded btn-small icon" style="margin-left: 10px;"><i class="fa fa-thumbs-up font-color-default"></i>10</a></span>
                                                 </div>
@@ -176,9 +83,11 @@
                                 <!--end review-->
                             </div>
                             <!--end reviews-->
+                          <% end %>
                         </section>
+                        <!--end 댓글&평점-->
                         <section id="write-a-review">
-                            <form class="labels-uppercase clearfix" id="form_reply_1">
+                            <form class="labels-uppercase clearfix" action="/board/reply_create" method="POST" id="form_reply_1">
                                 <div class="alert alert-dark fade in center" role="alert">
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close" data-switch="#review-write">
                                         <span aria-hidden="true">&times;</span>
@@ -188,6 +97,7 @@
                                 </div>
                                 <div class="review write switch" id="review-write">
                                     <aside class="name">의견달기</aside>
+                                    <input type="hidden" value="<%= @post.id %>" name="post_of_re">
                                     <div class="comment">
                                         <div class="row">
                                             <div class="form-group">
@@ -196,7 +106,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="form_reply_1-message">의견</label>
-                                                <textarea class="form-control" id="form_reply_1-message" rows="3" name="answer" required="" placeholder="이 선물에 대한 의견을 달아주세요."></textarea>
+                                                <textarea class="form-control" id="form_reply_1-message" rows="3" name="content_of_re" required="" placeholder="이 선물에 대한 의견을 달아주세요."></textarea>
                                             </div>
                                             <!--end form-group-->
                                             <div class="form-group pull-right">
@@ -212,6 +122,7 @@
                             </form>
                             <!--end form-->
                         </section>
+                        <!--end 댓글달기-->
                     </div>
                     <!--end main-content-->
                 </div>
@@ -222,7 +133,6 @@
         <!--end container-->
     </div>
     <!--end page-content-->
-
 </div>
 <!--end page-wrapper-->
 <a href="#page-header" class="to-top scroll" data-show-after-scroll="600"><i class="arrow_up"></i></a>
