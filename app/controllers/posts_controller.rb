@@ -44,7 +44,9 @@ class PostsController < ApplicationController
   redirect_to posts_path
 
   end
-
+  def admin
+    @posts = Post.all
+  end
 
   def admin_user     #관리자페이지
     @posts = Post.all
