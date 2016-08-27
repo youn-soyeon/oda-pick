@@ -12,6 +12,7 @@ class CreatePosts < ActiveRecord::Migration
       t.datetime :posted_at
       t.string :money
 
+
       t.timestamps null: false
     end
   end
