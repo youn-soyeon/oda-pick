@@ -2,26 +2,6 @@
 
 <html lang="en-US">
 
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="ThemeStarz">
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,400italic' rel='stylesheet' type='text/css'>
-    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="assets/fonts/elegant-fonts.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/zabuto_calendar.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-
-    <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/datapicker.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/jquery.datapick.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
-</head>
-
 <body>
 <div class="page-wrapper">
     <div id="page-content">
@@ -29,173 +9,13 @@
           <h2 align="right"><a href="/posts/new" class="btn btn-primary btn-rounded scroll">글쓰러 가기</a></h2>
             <div class="row">
                 <div class="col-md-3">
-                    <div class="sidebar">
-                        <div class="box filter">
-                            <form id="form-filter" class="labels-uppercase">
-                                <!--end form-group-inline-->
-                                <div class="wrapper">
-                              		<section>
-                              		    <h3>성별</h3>
-                              		    <ul class="checkboxes">
-                                            <li class="checkbox-inline no_indent"><label><input type="checkbox" name="gender_man">남자</label></li>
-                                            <li class="checkbox-inline no_indent"><label><input type="checkbox" name="gender_woman">여자</label></li>
-	                                    </ul>
-                                        <!--end checkboxes-->
-                                    </section>
-                                    <!--end gender-->
-                                	<section>
-                                	  <h3>가격대</h3>
-                                    <ul class="checkboxes">
-                                        <li class="checkbox-inline no_indent"><label><input type="checkbox" name="mon_0by5">~0.5</label></li>
-                                        <li class="checkbox-inline no_indent"><label><input type="checkbox" name="mon_5by10">0.5~1</label></li>
-                                        <li class="checkbox-inline no_indent"><label><input type="checkbox" name="mon_10by50">1~5</label></li>
-                                        <li class="checkbox-inline no_indent"><label><input type="checkbox" name="mon_50by100">5~10</label></li>
-                                        <li class="checkbox-inline no_indent"><label><input type="checkbox" name="mon_100">10~</label></li>
-                                    </ul>
-                										<div id="slider-range"></div>
-                                	</section>
-                                	<!-- end pricebar -->
-                                  <section>
-                                      <h3>연령대</h3>
-                                      <ul class="checkboxes">
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_0">유아 </label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_10">10대</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_20">20대</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_30">30대</label></li>
-                                      	  <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_40">40대</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_50">50대</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="age_60">60대이상</label></li>
-                                      </ul>
-                                      <!--end checkboxes-->
-                                  </section>
-                                  <!--end age-->
-                                  <section>
-                                      <h3>기념일</h3>
-                                      <ul class="checkboxes">
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_love">연인</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_friend">친구</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_family">가족</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_teacher">스승</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_birthday">생일</label></li>
-                                          <li class="checkbox-inline no_indent"><label><input type="checkbox" name="relation_enemy">원수</label></li>
-                                      </ul>
-                                      <!--end checkboxes-->
-                                  </section>
-                                  <!--end anniversary-->
-                                </div>
-                                <!--end filter-->
-                                <div class="form-group center">
-                                    <button type="submit" class="btn btn-primary btn-rounded form-control">Search</button>
-                                </div>
-                            </form>
-                            <!--end form-filter-->
-                        </div>
-                        <!--end filter-->
-                    </div>
-                    <!--end sidebar-->
+                  <%= render "shared/side" %>
+                  <!--side share-->
                 </div>
                 <!--end col-md-3-->
                 <div class="col-md-9">
                     <div class="main-content">
                         <div class="row">
-
-
-                            <div class="col-md-4 col-sm-6">
-                                <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="1">
-                                    <div class="item-wrapper">
-                                        <div class="image">
-                                            <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
-                                            <a href="/detail" class="wrapper" width="345" height="250" align="middle">
-                                                <img src="assets/img/items/sample1.png" alt="">
-                                            </a>
-                                        </div>
-                                        <!--end image-->
-                                        <div class="description">
-                                            <div class="meta">
-                                                <span><i class="fa fa-star"></i>8.9</span>
-                                                <span><i class="fa fa-file-text-o"></i>365</span>
-                                            </div>
-                                            <div class="info">
-                                                <figure class="label label-info">운동화</figure>
-                                                <a href="/detail"><h3>NIKE</h3></a>
-                                                <figure class="location">Air Jordan retro6</figure>
-                                            </div>
-                                        </div>
-                                        <!--end description-->
-                                        <div class="map-item">
-                                            <button class="btn btn-close"><i class="fa fa-close"></i></button>
-                                            <div class="map-wrapper"></div>
-                                        </div>
-                                        <!--end map-item-->
-                                    </div>
-                                </div>
-                                <!--end item-->
-                            </div>
-                            <!--col-md-3-->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="4">
-                                    <div class="item-wrapper">
-                                        <div class="image">
-                                            <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
-                                            <a href="/detail" class="wrapper" width="345" height="250" align="middle">
-                                                <img src="assets/img/items/sample4.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <!--end image-->
-                                        <div class="description">
-                                            <div class="meta">
-                                                <span><i class="fa fa-star"></i>9.1</span>
-                                                <span><i class="fa fa-file-text-o"></i>82</span>
-                                            </div>
-                                            <div class="info">
-                                                <figure class="label label-info">시계</figure>
-                                                <a href="/detail"><h3>SEIKO</h3></a>
-                                                <figure class="location">검정메탈시계</figure>
-                                            </div>
-                                        </div>
-                                        <!--end description-->
-                                        <div class="map-item">
-                                            <button class="btn btn-close"><i class="fa fa-close"></i></button>
-                                            <div class="map-wrapper"></div>
-                                        </div>
-                                        <!--end map-item-->
-                                    </div>
-                                </div>
-                                <!--end item-->
-                            </div>
-                            <!--col-md-3-->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="5">
-                                    <div class="item-wrapper">
-                                        <div class="image">
-                                            <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
-                                            <a href="/detail" class="wrapper" width="345" height="250" align="middle">
-                                                <img src="assets/img/items/sample5.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <!--end image-->
-                                        <div class="description">
-                                            <div class="meta">
-                                                <span><i class="fa fa-star"></i>9.6</span>
-                                                <span><i class="fa fa-file-text-o"></i>14</span>
-                                            </div>
-                                            <div class="info">
-                                                <figure class="label label-info">상품권</figure>
-                                                <a href="/detail"><h3>CGV</h3></a>
-                                                <figure class="location">영화관람권(2인)</figure>
-                                            </div>
-                                        </div>
-                                        <!--end description-->
-                                        <div class="map-item">
-                                            <button class="btn btn-close"><i class="fa fa-close"></i></button>
-                                            <div class="map-wrapper"></div>
-                                        </div>
-                                        <!--end map-item-->
-                                    </div>
-                                </div>
-                                <!--end item-->
-                            </div>
-                            <!--col-md-3-->
 <!---디비에서 받은 데이터를 직접 리스트에 띄우는 코드------------------------------------->
 
                             <% @posts.each do |post|%>
@@ -205,7 +25,7 @@
                                     <div class="item-wrapper">
                                         <div class="image">
                                             <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
-                                            <a href="/detail" class="wrapper" width="345" height="250" align="middle">
+                                            <a href="/posts/<%=post.id%>" class="wrapper" width="345" height="250" align="middle">
                                                 <img src="assets/img/items/sample6.jpg" alt="">
                                             </a>
                                         </div>
@@ -213,7 +33,7 @@
                                         <div class="description">
                                             <div class="meta">
                                                 <span><i class="fa fa-star"></i>8.9</span>
-                                                <span><i class="fa fa-file-text-o"></i>24</span>
+                                                <span><i class="fa fa-file-text-o">1</i></span>
                                             </div>
                                             <div class="info">
                                                 <figure class="label label-info">꽃</figure>

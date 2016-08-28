@@ -2,25 +2,6 @@
 
 <html lang="en-US">
 
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="ThemeStarz">
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,400italic' rel='stylesheet' type='text/css'>
-    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="assets/fonts/elegant-fonts.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/zabuto_calendar.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-
-    <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/datapicker.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/jquery.datapick.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
-</head>
 <body>
 <div class="page-wrapper">
 
@@ -31,7 +12,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                  <!--side share-->
+                    <%= render "shared/side" %>
+                    <!--side share-->
                 </div>
                 <!--end col-md-3-->
                 <div class="col-md-9 col-sm-8">
@@ -109,7 +91,7 @@
                         </section>
                         <!--end 댓글&평점-->
                         <section id="write-a-review">
-                            <form class="labels-uppercase clearfix" action="/board/reply_create" method="POST" id="form_reply_1">
+                            <form class="labels-uppercase clearfix" action="/posts/reply_create" method="POST" id="form_reply_1">
                                 <div class="alert alert-dark fade in center" role="alert">
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close" data-switch="#review-write">
                                         <span aria-hidden="true">&times;</span>

@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :posts 
+  resources :posts
   root 'home#index'
 
-
+  get "index" => 'home#index'
 
   # posts controller <= 기존의 board 에서바꿈 -----------------
    get 'destroy/:id'   => "posts#destroy"
