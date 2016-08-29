@@ -50,6 +50,7 @@ class PostsController < ApplicationController
 
   def admin_user     #관리자페이지
     @posts = Post.all
+    @users = User.all
   end
 
   def admin_content  #관리자페이지
@@ -71,14 +72,14 @@ end
 
 
 
-private #넘어온파라미터를 private함수로 사용한다.
-def post_params #포스트 디비안의 파라미터들
- params.require(:post).permit(:title, :content , :url, :anniversary,
- :age_group, :gift_gender, :money)
-end
+    private #넘어온파라미터를 private함수로 사용한다.
+    def post_params #포스트 디비안의 파라미터들
+     params.require(:post).permit(:title, :content , :url, :anniversary,
+     :age_group, :gift_gender, :money)
+    end
 
-
-
-
+    def user_parmas
+      params.require(:user).permit(:email)
+    end
 
 end
