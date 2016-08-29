@@ -105,7 +105,28 @@
                               <!--end item-->
                           </div>
   <!--여기다가-->
-                    
+                       <table class="table table-striped">
+                         <tr>
+                         <th>상품명</th>
+                         <th>가격</th>
+                         <th>수정/삭제</th>
+                         </tr>
+                       <% @posts.each do |post|%>
+                         <tr>
+                         <th><%= link_to post.title, post_path(id: post.id)%><</th>
+                         <th><%= post.money%></th>
+                         <th>
+                           <figure class="label label-info">
+                           <%= link_to "수정", edit_post_path(post)%>
+                           </figure>
+                           <figure class="label label-info">
+                            <a href="/destroy/<%=post.id%>">삭제</a>
+                           </figure>
+                         </th>
+                         </tr>
+                       <% end %>
+                       </table>
+
                        </div>
             </div>
             <!--end container-->
